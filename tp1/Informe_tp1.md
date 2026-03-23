@@ -3,7 +3,7 @@
 
 Integrantes:
 
-*
+* María Clara Gonzalez Leahy
 * Anna Nuñez
 * Ignacio J. Vigezzi  
 
