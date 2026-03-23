@@ -1,6 +1,6 @@
 # Tiny_admins
 ## Integrantes
-*
+* María Clara Gonzalez Leahy - claragleahy@mi.unc.edu.ar
 * Anna Nuñez - anna.nunez@mi.unc.edu.ar
 * Vigezzi Ignacio Joaquin - ignacio.vigezzi@mi.unc.edu.ar  
 
