@@ -4,7 +4,7 @@
 Integrantes:
 
 *
-*
+* Anna Nuñez
 * Ignacio J. Vigezzi  
 
 **Profesores:** Miguel Ángel Solinas y Javier Alejandro Jorge
