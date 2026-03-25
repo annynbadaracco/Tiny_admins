@@ -86,6 +86,35 @@ Si se ejecuta gprof con el nombre de una funcion, genera solamente el perfil de 
 
 <img width="703" height="193" alt="image" src="https://github.com/user-attachments/assets/170e3654-2fc9-45d6-8df2-492eba059f8c" />
 
+## Práctico  
+Conseguir un esp32 o cualquier procesador al que se le pueda cambiar la frecuencia.
+Ejecutar un código que demore alrededor de 10 segundos. Puede ser un bucle for con sumas de enteros por un lado y otro con suma de floats por otro lado.
+¿Qué sucede con el tiempo del programa al duplicar (variar) la frecuencia ? 
+
+### Materiales 
+- ESP32 C3 Super mini.
+- Arduino IDE.
+
+### Experiencia
+Se ejecutaron 2 códigos. El primero con un bucle for que duraba unos 10.56 segundos al que se le fue disminuyendo la frecuencia del CPU a la mitad. En este bucle las variables del contador eran de tipo int.
+Se realizaron 3 ejecuciones:
+- 160 MHz
+- 80 MHz
+- 40 MHz
+
+El segundo código era muy parecido al primero solo que habían dos contadores, uno con variables tipo int y otro con variables tipo float. El programa comparaba los tiempos de ejecución de ambos a una frecuencia del CPU de 160Mhz.
+
+### Inferencias
+Para el primer programa uno esperaría que el tiempo de ejecución se fuera duplicando a medida que la frecuencia de la CPU se diminuye a la mitad, ya que son inversamente proporcionales.
+Y para el segundo programa el contador de tipo float debería ser más lento que el de tipo int por la naturaleza de cada tipo de dato.
+
+### Resultados
+![frecuencias](https://github.com/user-attachments/assets/6a5b48cf-4960-477e-9a0c-aeecc83fe963)
+![064a6406-ef26-4610-bc5f-1b1e8af79abb](https://github.com/user-attachments/assets/10e4cc66-c6b6-452b-bc85-c0d11bc420c3)
+
+### Conclusión
+Las inferencias fueron correctas y se pudo comprobar que tanto el tipo de dato como la frecuencia de la CPU elegida para la ejecución de los progrmas afecta el tiempo de ejecución y en consecuencia el rendimiento.
+
 
 
 
