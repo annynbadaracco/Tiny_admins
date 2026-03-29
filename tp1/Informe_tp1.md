@@ -15,21 +15,32 @@ Integrantes:
 ## Objetivo  
 Poner en práctica los conocimientos sobre performance y rendimiento de los computadores.
 
+### Benchmarks
+En el ámbito de la computación, es fundamental evaluar el rendimiento de un sistema al ejecutar las tareas y funciones que se esperan de él. Para ello se emplean los benchmarks o pruebas de rendimiento, que consisten en tareas reproducibles diseñadas para reflejar la actividad normal del sistema. Estas pruebas permiten obtener métricas cuantificables que sirven como referencia para analizar el impacto de cambios en el hardware, modificaciones de procesos o mejoras en la configuración. De esta manera, los benchmarks permiten comparar resultados y tomar decisiones sobre optimización y desempeño.
 
+Ejemplos de benchmarks basados en tareas que realizamos a diario son:
+
+| Benchmark | Tarea | Medición|
+|------------|--------|--------|
+| Speedometer 3.1| Navegacíon web<br> Uso de aplicaciones online | rendimiento de navegadores,<br> paginas y aplicaciones web |
+| Speedtest.net| Videollamadas<br> Streaming de video<br> Descarga de archivos  | Velocidad y estabilidad de la conexión a internet |
+| Geekbench CPU | Programación y compilación de codigo<br> | Rendimiento de CPU en cálculos y multitarea |
+| 3DMark| Jugar videojuegos | Rendimiento de CPU y GPU en graficos 3D |
+| CrystalDiskMark| Trabajo con archivos grandes | Velocidad de lectura y escritura en almacenamiento |
 
 
 ### Compilación del kernel de linux
 
-| Procesador | Tiempo | Rendimiento |
-|------------|--------|--------------------|
-| AMD Ryzen 9 7950X 16-Core | 50 | 0.0200 |
-| Intel Core i5-13600K | 72 | 0.0139 |
-| AMD Ryzen 9 5900X 12-Core | 76 | 0.0132 |
+| Procesador | Puesto (desc) | Tiempo | Rendimiento |
+|------------|--------|----------|----------|
+| AMD Ryzen 9 7950X 16-Core | 71 | 52<sup> +/- 3</sup> | 0.019 |
+| Intel Core i5-13600K | 52 | 83<sup> +/- 3</sup> | 0.012 |
+| AMD Ryzen 9 5900X 12-Core | 47 | 97<sup> +/- 6</sup> | 0.010 |
 
 $$ Aceleración = \frac{Rendimiento \ mejorado}{rendimiento \ original} $$
-$$ 1.44 = \frac{0.0200}{0.0132} $$
+$$ 1.58 = \frac{0.019}{0.012} $$
 
-Tomando como referencia es procesador Intel Core i5-13600K, un Ryzen 9 7950X 16-Core tendra una aceleracion o speedup del 44%
+Tomando como referencia es procesador Intel Core i5-13600K, un Ryzen 9 7950X 16-Core tendra una aceleracion o speedup del 58%
 
 ## Time Profiling
 ## 1)
