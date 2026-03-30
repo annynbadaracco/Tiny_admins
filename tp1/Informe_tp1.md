@@ -105,6 +105,7 @@ Ejecutar un código que demore alrededor de 10 segundos. Puede ser un bucle for 
 ### Materiales 
 - ESP32 C3 Super mini.
 - Arduino IDE.
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/a075764c-b9fe-482f-9b09-cc183a6d93aa" />
 
 ### Experiencia
 Se ejecutaron 2 códigos. El primero con un bucle for que duraba unos 10.56 segundos al que se le fue disminuyendo la frecuencia del CPU a la mitad. En este bucle las variables del contador eran de tipo int.
@@ -126,7 +127,7 @@ Y para el segundo programa el contador de tipo float debería ser más lento que
 ### Conclusión
 Las inferencias fueron correctas y se pudo comprobar que tanto el tipo de dato como la frecuencia de la CPU elegida para la ejecución de los progrmas afecta el tiempo de ejecución y en consecuencia el rendimiento.
 
+## Conclusión final del TP1
+En este trabajo logramos comparar el rendimiento de distintos procesadores frente a un kernel de linux. Además, permitió comprobar que el rendimiento de un sistema depende directamente de la frecuencia del CPU y del tipo de datos utilizados. Al reducir la frecuencia, el tiempo de ejecución aumenta, y las operaciones con float resultan más lentas que con int. En conclusión, tanto el hardware como las decisiones de programación influyen significativamente en el rendimiento.
 
-
-
-
+Por último, también pudimos identificar distintos benchmarch para medir el rendimiento según las tareas que vayamos a realizar.
