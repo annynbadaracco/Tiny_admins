@@ -1,6 +1,8 @@
+extern long suma(long a, long b);
 
-int conversion(float gini){
+long conversion(float gini){
     
-    int result = (int) gini + 1;
+    long gini_l = (long) gini;
+    long result = suma(gini_l, 1);
     return result;
 }

@@ -2,23 +2,31 @@
 
 # Compiler
 CC = gcc
+AS = as
 
 # Flags
-CFLAGS = -Wall -shared
+CFLAGS = -Wall -g -O0 -fPIC
+ASFLAGS = --64 -g
 
 # Target name
 TARGET = conversion.so
-
-# Source file
-SRC = conversion.c
+OBJS = conversion.o suma.o
 
 # Default rule
 all: $(TARGET)
 
+# Assemble suma.s
+suma.o: suma.s
+	$(AS) $(ASFLAGS) -o $@ $<
+
+# Compile conversion.c
+conversion.o: conversion.c
+	$(CC) $(CFLAGS) -c -o $@ $<
+
 # Build rule
-$(TARGET): $(SRC)
-	$(CC) $(CFLAGS) -o $(TARGET) $(SRC)
+$(TARGET): $(OBJS)
+	$(CC) -shared -o $@ $(OBJS)
 
 # Clean rule
 clean: 
-	rm -f $(TARGET)
+	rm -f $(OBJS) $(TARGET)

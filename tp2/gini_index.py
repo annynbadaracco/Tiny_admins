@@ -22,7 +22,7 @@ library = ctypes.CDLL('./conversion.so')
 
 library.conversion.argtypes = (ctypes.c_float,)
 
-library.conversion.restype = ctypes.c_int
+library.conversion.restype = ctypes.c_long
 
 def conversion(num):
     return library.conversion(num)
