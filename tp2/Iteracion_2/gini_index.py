@@ -20,12 +20,12 @@ print("Converted list: \n")
 
 library = ctypes.CDLL('./conversion.so')
 
-library.conversion.argtypes = (ctypes.c_float,)
+library.conversion.argtypes = (ctypes.c_float, ctypes.c_float,)
 
 library.conversion.restype = ctypes.c_long
 
-def conversion(num):
-    return library.conversion(num)
+def conversion(num_a, num_b):
+    return library.conversion(num_a, num_b)
 
 
 for entry in data[1]:
@@ -33,7 +33,7 @@ for entry in data[1]:
     gini = entry["value"]
 
     if gini is not None:
-        converted = conversion(gini)
+        converted = conversion(gini, 1.0)
         print(year, converted)
     else:
         print(year, "None")
