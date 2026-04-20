@@ -22,7 +22,7 @@ mediante el uso de API Rest y Python. Los datos de consulta realizados deben ser
 
 **Capa intermedia:** Mediante el modulo ctypes se cargó la función de conversión y suma programada en C y compilada como libreria compartida. Esta toma un argumento de punto flotante, lo convierte a un entero y le suma 1. El programa principal imprime la lista original con los valores junto al año que corresponden, realiza la conversión, y finalmente vuelve a imprimir los valores ajustados.
 
-![Funcionamiento](./Iteracion_1/screenshots/Screenshot%20from%202026-04-20%2008-08-51.png)
+![Funcionamiento](./Iteracion_1/screenshots/Funcionamiento.png)
 
 ## Segunda iteración
 
